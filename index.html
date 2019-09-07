@@ -174,10 +174,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
 
     <!-- local script file  -->
-    <script>
-        baguetteBox.run('.compact-gallery', { animation: 'slideIn' });
-    </script>
     <script src="generateElement.js"></script>
+    <script>
+        $(document).ready(function(){
+            baguetteBox.run('.compact-gallery', { animation: 'slideIn' });
+        });
+    </script>
 
 </body>
 
