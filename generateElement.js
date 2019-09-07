@@ -1,6 +1,6 @@
-var south = ["SOUTH1","SOUTH2","SOUTH3","SOUTH4"];
-var north = ["NORTH1","NORTH2","NORTH3"];
-var fashion = ["FASHION1","FASHION2","FASHION3"];
+//var south = ["SOUTH1","SOUTH2","SOUTH3","SOUTH4"];
+//var north = ["NORTH1","NORTH2","NORTH3"];
+var fashion = ["Fashion H","Fashion H (1)","Fashion H (2)","Fashion H (3)","Fashion H (4)","Fashion R (1)","Fashion R (2)","Fashion R (3)","Fashion P-2","Fashion P-3","Fashion P-4","Fashion P-5","Fashion P-6","Fashion P-7","Fashion P-8"];
 
 var childDiv = "<div class='col-md-6 col-lg-4 item zoom-on-hover'>";
 var a = "<a class='lightbox' href='img/dock.jpg'>";
@@ -29,27 +29,6 @@ $(document).ready(function(){
     {
         fashionDiv.append(childDiv+atag(fashion[i])+imgtag(fashion[i])+span+spanChild1+spanClose+spanChild2+spanClose+spanClose+aClose+divClose);
     }
-
-var sampleObject = {
-    a: 1,
-    b: 2,
-    c: {
-        x: 11,
-        y: 22
-    }
-};
-console.log(sampleObject);
-
-var txtFile = "./object.json";
-   //var file = new File(txtFile,"write");
-   var file = new File(["sample"], "sample.txt", {type: "text/plain", lastModified: new Date()})
-   var str = JSON.stringify(sampleObject);
-
-   console.log("opening file...");
-   //file.open(); 
-   console.log("writing file..");
-   //file.writeline(str);
-   //file.close();
 
 });
 
